@@ -14,13 +14,22 @@ import { NavComponent } from './componets/template/nav/nav.component';
 // Materia SideNav
 import {MatSidenavModule}from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import { AlunosComponent } from './views/alunos/alunos.component';
+import {MatCardModule} from '@angular/material/card';
+import { HomeComponent } from './views/home/home.component';
+import { RedDirective } from './directives/red.directive';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    AlunosComponent,
+    HomeComponent,
+    RedDirective
   ],
   imports: [
     BrowserModule,
@@ -28,7 +37,8 @@ import {MatListModule} from '@angular/material/list';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
