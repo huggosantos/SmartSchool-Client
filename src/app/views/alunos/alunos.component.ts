@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-alunos',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlunosComponent implements OnInit {
 
-  constructor() { }
+  constructor( private router: Router) { }
 
   ngOnInit(): void {
+  }
+    
+  navigateToAlunoCreate(): void {
+      this.router.navigate(['/alunos/create']) ;
   }
 
 }

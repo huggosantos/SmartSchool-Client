@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 // Importação dos Componentes
 import {HomeComponent} from './views/home/home.component';
 import  {AlunosComponent} from './views/alunos/alunos.component';
+import { AlunoCreateComponent } from './componets/alunos/aluno-create/aluno-create.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path:"alunos",
     component:AlunosComponent
+  },
+  {
+    path:"alunos/create",
+    component:AlunoCreateComponent
   }
 
 ];
