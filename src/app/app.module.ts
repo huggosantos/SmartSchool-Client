@@ -30,6 +30,10 @@ import {FormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { AlunoReadComponent } from './componets/alunos/aluno-read/aluno-read.component';
+import { AlunoRead2Component } from './componets/alunos/aluno-read2/aluno-read2.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -41,7 +45,8 @@ import { AlunoReadComponent } from './componets/alunos/aluno-read/aluno-read.com
     HomeComponent,
     RedDirective,
     AlunoCreateComponent,
-    AlunoReadComponent
+    AlunoReadComponent,
+    AlunoRead2Component
 
   ],
   imports: [
@@ -57,7 +62,10 @@ import { AlunoReadComponent } from './componets/alunos/aluno-read/aluno-read.com
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
 
   ],
   providers: [],
