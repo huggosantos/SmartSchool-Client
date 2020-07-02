@@ -23,8 +23,13 @@ import { HomeComponent } from './views/home/home.component';
 
 import { RedDirective } from './directives/red.directive';
 import { AlunoCreateComponent } from './componets/alunos/aluno-create/aluno-create.component';
+import {HttpClientModule} from '@angular/common/http';
 
-
+// Forms
+import {FormsModule} from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { AlunoReadComponent } from './componets/alunos/aluno-read/aluno-read.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +40,9 @@ import { AlunoCreateComponent } from './componets/alunos/aluno-create/aluno-crea
     AlunosComponent,
     HomeComponent,
     RedDirective,
-    AlunoCreateComponent
+    AlunoCreateComponent,
+    AlunoReadComponent
+
   ],
   imports: [
     BrowserModule,
@@ -46,7 +53,11 @@ import { AlunoCreateComponent } from './componets/alunos/aluno-create/aluno-crea
     MatListModule,
     MatCardModule,
     MatButtonModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
 
   ],
   providers: [],

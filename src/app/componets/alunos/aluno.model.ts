@@ -1,7 +1,7 @@
 export interface Aluno {
-    Id: number
-    Nome:string
-    Sobrenome:string
-    Telefone:string
+    id?: number
+    nome:string
+    sobrenome:string
+    telefone:string
 }
 
