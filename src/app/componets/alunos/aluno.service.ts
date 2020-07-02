@@ -34,5 +34,16 @@ export class AlunoService {
     return this.http.get<Aluno[]>('/api/aluno')
   }
 
+  readById(id: string): Observable<Aluno>{
+    const rota = `/api/aluno/byid/${id}`
+    console.log(rota)
+    return this.http.get<Aluno>(rota)
+  }
+
+  update(aluno: Aluno): Observable<Aluno>{
+    const rotaUp = `/api/aluno/${aluno.id}`
+    return this.http.put<Aluno>(rotaUp,aluno)
+  }
+
 
 }

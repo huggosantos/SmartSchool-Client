@@ -34,6 +34,7 @@ import { AlunoRead2Component } from './componets/alunos/aluno-read2/aluno-read2.
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { AlunoUpdateComponent } from './componets/alunos/aluno-update/aluno-update.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { MatSortModule } from '@angular/material/sort';
     RedDirective,
     AlunoCreateComponent,
     AlunoReadComponent,
-    AlunoRead2Component
+    AlunoRead2Component,
+    AlunoUpdateComponent
 
   ],
   imports: [
